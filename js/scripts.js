@@ -16,11 +16,6 @@ function beepBoop(numInput) {
     return beepBoopArray;
   }
 
-  function nameInput (nameInput) {
-    let greeting = "HELLO " + nameInput + "! MY NAME IS MR. ROBOGER AND I HAVE THIS TO SAY TO YOU:";
-    return greeting;
-  }
-
 //UI Logic{
 window.addEventListener("load", function (event) {
     const form = document.getElementById("formID");
@@ -29,15 +24,21 @@ window.addEventListener("load", function (event) {
         const numberInput = document.querySelector("input[type='number']");
         const num = parseInt(numberInput.value);
         const result = beepBoop(num);
-        console.log(result);
-        displayResult (result);
+
+        const nameInput = document.getElementById("nameID");
+        const name = nameInput.value.toUpperCase();
+
+        displayResult (result, name);
     }); 
-function displayResult (result) {
-    let endDiv = document.getElementById("result");
-    endDiv.removeAttribute("class");
-    
+function displayResult (result, name) {
+    // let endDiv = document.getElementById("result");
+    // endDiv.removeAttribute("class");
     let output = document.getElementById("output");
     output.innerText = result.join(" ") + "!!!"
-    }
+
+    let greeting = document.getElementById("greetingID");
+    greeting.innerText = "HELLO " + name + " MY NAME IS MR. ROBOGERS AND HERE IS WHAT I HAVE TO SAY TO YOU:"
+    
+    } 
 });
 

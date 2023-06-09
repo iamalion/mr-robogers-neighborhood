@@ -20,22 +20,18 @@
             <div class="form-group">
                 <p>What's your name, neighbor?</p>
                 <label for="name" id="name-label"></label>
-                <input type="text" name="name" id="name" class="form-control" placeholder="Xerxes Xavier Xander III" required/>
+                <input type="text" name="name" id="nameID" class="form-control" placeholder="Xerxes Xavier Xander III" required/>
             </div>
             <div class="form-group">
                 <p>Give Mr. Roboger a shout by entering a number between 1 and 100:</p>
                 <label for="number" id="number-label"></label>
-                <input type="number" min="0" max="100" id="number" class="form-control" placeholder="99"/>
-            <!-- <p class="formPara">What's your name, neighbor?</p>
-            <input type="text" id="nameFromForm" class="inputField" placeholder="Xerxes">-->
-
-            <!--<p class="formPara">Give Mr. Roboger a shout by entering a number between 1 and 100:</p>
-            <input type="number" min="0" max="100" class="inputField" placeholder="Enter a number"><br />-->
+                <input type="number" min="0" max="100" id="numberID" class="form-control" placeholder="99"/>
+        
             <button type="submit" id="buttonID">Hi Mr. Roboger!</button>
         </form>
     </div>
     <div id="result" class="hidden">
-        <p><span id="greetingID"></span></p>
+        <p id="greetingID"></p>
         <h2 id="output"></h2>
     </div>   
 </body>
