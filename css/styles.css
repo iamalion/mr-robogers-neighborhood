@@ -2,26 +2,44 @@ body {
     background-color: #EE9AAA;
     font-family: 'Exo 2', sans-serif;
     color: #513D49;
+    
+}
+#intro {
+    background-color: #EE9AAA;
+    text-align: center;
+    border: 2px solid #513D49;
+    margin: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 200px 200px 10px 10px;
+    padding: 20px; 
 }
 h1 {
-    text-align: center;
     font-size: 3em;
     text-shadow: 2px 2px #E44462;
 }
-#intro {
-    text-align: center;
+
+#introPara {
     font-size: 1.5em;
 }
+
 #formDiv {
+    
     display: block;
     text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 form {
+    background-color: #EE9AAA;
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
     text-align: left;
-    border: 2px solid black;
     padding: 20px;
+    font-size: 1.5em;
     
+}
+.inputField {
+    padding;
 }

@@ -11,16 +11,26 @@
     <title>Mr. Roboger's Neighborhood</title>
 </head>
 <body>
-    <div class="intro">
+    <div id="intro">
         <h1>Welcome to Mr. Roboger's Neighborhood!</h1>
-        <p id="intro">Mr. Roboger is a friendly robot who would love to talk to you! He only knows a few words and phrases though... and only if you speak to him first using numbers... so he's not the best conversationalist...... but........ he's still deserving of love!!!</p>
+        <p id="introPara">Mr. Roboger is a friendly robot who would love to talk to you! He only knows a few words and phrases though... and only if you speak to him first using numbers... so he's not the best conversationalist...... but........ he's still deserving of love!!!</p>
     </div>
     <div id="formDiv">
         <form id="formID">
-            <p class="formPara">What's your name, neighbor?</p>
-            <input type="text" id="nameFromForm" placeholder="Xerxes">
-            <p class="formPara">Give Mr. Roboger a shout by entering a number between 1 and 100:</p>
-            <input type="number" min="0" max="100" placeholder="Enter a number"><br />
+            <div class="form-group">
+                <p>What's your name, neighbor?</p>
+                <label for="name" id="name-label"></label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Xerxes Xavier Xander III" required/>
+            </div>
+            <div class="form-group">
+                <p>Give Mr. Roboger a shout by entering a number between 1 and 100:</p>
+                <label for="number" id="number-label"></label>
+                <input type="number" min="0" max="100" id="number" class="form-control" placeholder="99"/>
+            <!-- <p class="formPara">What's your name, neighbor?</p>
+            <input type="text" id="nameFromForm" class="inputField" placeholder="Xerxes">-->
+
+            <!--<p class="formPara">Give Mr. Roboger a shout by entering a number between 1 and 100:</p>
+            <input type="number" min="0" max="100" class="inputField" placeholder="Enter a number"><br />-->
             <button type="submit" id="buttonID">Hi Mr. Roboger!</button>
         </form>
     </div>
