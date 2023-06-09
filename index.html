@@ -7,15 +7,19 @@
     <title>Mr. Roboger's Neighborhood</title>
 </head>
 <body>
-    <h1>Welcome to Mr. Roboger's Neighborhood!</h1>
-    <p>Mr. Roboger is a friendly robot who would love to talk to you! He only knows a few words and phrases though... and only if you speak to him first using numbers... so he's not the best conversationalist...... but........ he's still deserving of love!!!</p>
-    <form id="formID">
-    <p>What's your name neighbor?</p>
-    <input type="text" id="nameFromForm">
-    <p>Give Mr. Roboger a shout by entering a number between 1 and 100:</p>
-    <input type="number" min="0" max="100" placeholder="Enter a number"><br />
-    <button type="submit" id="buttonID">Hi Mr. Roboger!</button>
-    </form>
-    
+    <div id="formDiv">
+        <h1>Welcome to Mr. Roboger's Neighborhood!</h1>
+        <p>Mr. Roboger is a friendly robot who would love to talk to you! He only knows a few words and phrases though... and only if you speak to him first using numbers... so he's not the best conversationalist...... but........ he's still deserving of love!!!</p>
+        <form id="formID">
+            <p>What's your name neighbor?</p>
+            <input type="text" id="nameFromForm">
+            <p>Give Mr. Roboger a shout by entering a number between 1 and 100:</p>
+            <input type="number" min="0" max="100" placeholder="Enter a number"><br />
+            <button type="submit" id="buttonID">Hi Mr. Roboger!</button>
+        </form>
+    </div>
+    <div id="result" class="hidden">
+        <h2 id="output"></h2>
+    </div>   
 </body>
 </html>

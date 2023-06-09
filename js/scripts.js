@@ -31,5 +31,15 @@ window.addEventListener("load", function (event) {
         const num = parseInt(numberInput.value);
         const result = beepBoop(num);
         console.log(result);
-        });
-      });
+        displayResult (result);
+    }); 
+ function displayResult (result) {
+    let endDiv = document.getElementById("result");
+    endDiv.removeAttribute("class");
+    let output = document.getElementById("output");
+    output.innerText = result.join(" ") + "!!!"
+    }
+       
+});
+      
+
