@@ -1,6 +1,7 @@
 
 //Business logic
 function beepBoop(numInput) {
+    event.preventDefault()
     const beepBoopArray = [];
     for (let i = 0; i <= numInput; i++) {
       if (i.toString().includes("3")) {
@@ -17,14 +18,18 @@ function beepBoop(numInput) {
   }
 
   function nameInput (nameInput) {
-    let name = "Hello " + nameInput + "!";
-    return name;
+    let greeting = "Hello " + nameInput + "!";
+    return greeting;
   }
 
-//UI Logic
-function handleForm (event) {
-    window.addEventListener("load",event)
-    event.preventDefault();
+//UI Logic{
+window.addEventListener("load", function (event) {
     const form = document.getElementById("formID");
-    form.addEventListener("submit", beepBoop)
-}
+    form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        const numberInput = document.querySelector("input[type='number']");
+        const num = parseInt(numberInput.value);
+        const result = beepBoop(num);
+        console.log(result);
+        });
+      });
