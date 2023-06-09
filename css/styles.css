@@ -77,43 +77,44 @@ form {
     background-color: grey;
     font-style: italic;
 }
+#centerResults {
+    display: block;
+    text-align: center;
+}
 img {
     width: 30%;
     background-color: white;
     padding: 20px;
+    margin: 0 auto;
     border: 2px solid #513D49;
     border-radius: 10px;
     float: left;
+    display:block;
 }
+#greetingID {
+    width: 30%;
+    background-color: white;
+    padding: 20px;
+    margin: 0 auto;
+    border: 2px solid #513D49;
+    border-radius: 10px;
+    float: left;
+    display:block;
+}
+#output {
+    width: 30%;
+    background-color: white;
+    padding: 20px;
+    margin: 0 auto;
+    border: 2px solid #513D49;
+    border-radius: 10px;
+    float: left;
+    display:block;
+}
+
 .hidden {
     display: none;
 }
-
-.box {
-    width: 300px;
-    margin: 50px auto;
-    background: #E6BD51;
-    padding: 20px;
-    text-align: center;
-    font-weight: 900;
-    color: white;
-    position:relative;
-    border-radius: 10px;
-  }
-
-  .speechBubble:before {
-    content: "";
-    width: 0px;
-    height: 0px;
-    position: absolute;
-    border-left: 10px solid transparent;
-    border-right: 10px solid #E6BD51;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid #E6BD51;
-    left: -15px;
-    top: 50px;
-}
-  
 
 #clearForm {
     width: 50%;
@@ -122,6 +123,8 @@ img {
     margin-top: 25px;
     border-radius: 10px;
     font-size: 1em;
+    float: left;
+    clear: left;
 }
 
 #clearForm:hover {
