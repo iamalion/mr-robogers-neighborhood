@@ -1,4 +1,3 @@
-
 //Business logic
 function beepBoop(numInput) {
     event.preventDefault()
