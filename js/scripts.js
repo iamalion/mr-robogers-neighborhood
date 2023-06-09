@@ -15,3 +15,16 @@ function beepBoop(numInput) {
     }
     return beepBoopArray;
   }
+
+  function nameInput (nameInput) {
+    let name = "Hello " + nameInput + "!";
+    return name;
+  }
+
+//UI Logic
+function handleForm (event) {
+    window.addEventListener("load",event)
+    event.preventDefault();
+    const form = document.getElementById("formID");
+    form.addEventListener("submit", beepBoop)
+}

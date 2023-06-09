@@ -9,9 +9,12 @@
 <body>
     <h1>Welcome to Mr. Roboger's Neighborhood!</h1>
     <p>Mr. Roboger is a friendly robot who would love to talk to you! He only knows a few words and phrases though... and only if you speak to him first using numbers... so he's not the best conversationalist...... but........ he's still deserving of love!!!</p>
-    <p>Give him a shout by entering a number between 1 and 100:</p>
     <form id="formID">
-        <input type="number" placeholder="Enter a number">
+    <p>What's your name neighbor?</p>
+    <input type="text" id="nameFromForm">
+    <p>Give Mr. Roboger a shout by entering a number between 1 and 100:</p>
+    <input type="number" min="0" max="100" placeholder="Enter a number"><br />
+    <button type="submit" id="buttonID">Hi Mr. Roboger!</button>
     </form>
     
 </body>
