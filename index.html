@@ -19,20 +19,22 @@
         <form id="formID">
             <div class="form-group">
                 <p>What's your name, neighbor?</p>
-                <label for="name" id="name-label"></label>
                 <input type="text" name="name" id="nameID" class="form-control" placeholder="Xerxes Xavier Xander III" required/>
             </div>
             <div class="form-group">
                 <p>Give Mr. Roboger a shout by entering a number between 1 and 100:</p>
-                <label for="number" id="number-label"></label>
-                <input type="number" min="0" max="100" id="numberID" class="form-control" placeholder="99"/>
+                <input type="number" min="0" max="100" id="numberID" class="form-control" required/>
         
             <button type="submit" id="buttonID">Hi Mr. Roboger!</button>
         </form>
     </div>
     <div id="result" class="hidden">
-        <p id="greetingID"></p>
-        <h2 id="output"></h2>
+        <img src="imgs/robot-gbe9ebd4ad_1280.png" alt="An image of Mr. Robogers a friendly robot">
+        <div class="box speechBubble">
+            <h2 id="greetingID"></h2>
+            <p id="output"></p>
+        </div>
+        <button id="clearForm">Try a different number!</button>
     </div>   
 </body>
 </html>

@@ -31,14 +31,18 @@ window.addEventListener("load", function (event) {
         displayResult (result, name);
     }); 
 function displayResult (result, name) {
-    // let endDiv = document.getElementById("result");
-    // endDiv.removeAttribute("class");
+     let endDiv = document.getElementById("result");
+     endDiv.removeAttribute("class");
     let output = document.getElementById("output");
     output.innerText = result.join(" ") + "!!!"
 
     let greeting = document.getElementById("greetingID");
-    greeting.innerText = "HELLO " + name + " MY NAME IS MR. ROBOGERS AND HERE IS WHAT I HAVE TO SAY TO YOU:"
+    greeting.innerText = "Hello " + name + "! It's nice to meet you!"
     
     } 
-});
+    const clear = this.document.getElementById("clearForm");
+    clear.addEventListener("click", function (){
+        location.reload();
+    });
+})
 
