@@ -2,7 +2,7 @@
 
 #### By _**Lindsay Warr**_
 
-### Descrtiption
+### Description
 Mr. Robogers Neighborhood is the project from Week 3 at Epicodus. It takes input from a user and uses for loops to produce a result.
 
 ### Technologies Used
