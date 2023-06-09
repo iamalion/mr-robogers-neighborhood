@@ -18,7 +18,7 @@ function beepBoop(numInput) {
   }
 
   function nameInput (nameInput) {
-    let greeting = "Hello " + nameInput + "!";
+    let greeting = "HELLO " + nameInput + "! MY NAME IS MR. ROBOGER AND I HAVE THIS TO SAY TO YOU:";
     return greeting;
   }
 
@@ -33,13 +33,12 @@ window.addEventListener("load", function (event) {
         console.log(result);
         displayResult (result);
     }); 
- function displayResult (result) {
+function displayResult (result) {
     let endDiv = document.getElementById("result");
     endDiv.removeAttribute("class");
+    
     let output = document.getElementById("output");
     output.innerText = result.join(" ") + "!!!"
     }
-       
 });
-      
 
