@@ -1,6 +1,6 @@
 function beepBoop(numInput) {
-    let beepBoopArray = []
-    if (numInput === 5){
-        
-    }
-}
+    const beepBoopArray  = [];
+    for (let i = 0; i <= numInput; i++){
+      beepBoopArray.push(i);
+    } return beepBoopArray;
+  }
