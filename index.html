@@ -2,18 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+    
     <script src="js/scripts.js"></script>
     <title>Mr. Roboger's Neighborhood</title>
 </head>
 <body>
-    <div id="formDiv">
+    <div class="intro">
         <h1>Welcome to Mr. Roboger's Neighborhood!</h1>
-        <p>Mr. Roboger is a friendly robot who would love to talk to you! He only knows a few words and phrases though... and only if you speak to him first using numbers... so he's not the best conversationalist...... but........ he's still deserving of love!!!</p>
+        <p id="intro">Mr. Roboger is a friendly robot who would love to talk to you! He only knows a few words and phrases though... and only if you speak to him first using numbers... so he's not the best conversationalist...... but........ he's still deserving of love!!!</p>
+    </div>
+    <div id="formDiv">
         <form id="formID">
-            <p>What's your name neighbor?</p>
-            <input type="text" id="nameFromForm">
-            <p>Give Mr. Roboger a shout by entering a number between 1 and 100:</p>
+            <p class="formPara">What's your name, neighbor?</p>
+            <input type="text" id="nameFromForm" placeholder="Xerxes">
+            <p class="formPara">Give Mr. Roboger a shout by entering a number between 1 and 100:</p>
             <input type="number" min="0" max="100" placeholder="Enter a number"><br />
             <button type="submit" id="buttonID">Hi Mr. Roboger!</button>
         </form>
